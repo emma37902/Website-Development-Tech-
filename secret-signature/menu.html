@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Secret Signature Restaurant & Lounge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Secret Signature</h1>
+                <p>Fine Dining • Lounge • Rooftop</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Menu Header -->
+    <section class="menu-header">
+        <div class="container">
+            <h1>Our Exquisite Menu</h1>
+            <p>Curated culinary delights for your palate</p>
+        </div>
+    </section>
+
+    <!-- Menu Categories -->
+    <section class="menu-section">
+        <div class="container">
+            <div class="menu-filters">
+                <button class="filter-btn active" onclick="filterMenu('breakfast')">Breakfast</button>
+                <button class="filter-btn" onclick="filterMenu('starters')">Starters</button>
+                <button class="filter-btn" onclick="filterMenu('main')">Main Course</button>
+                <button class="filter-btn" onclick="filterMenu('sides')">Sides</button>
+                <button class="filter-btn" onclick="filterMenu('soups')">Soups</button>
+                <button class="filter-btn" onclick="filterMenu('salads')">Salads</button>
+                <button class="filter-btn" onclick="filterMenu('pasta')">Pasta</button>
+                <button class="filter-btn" onclick="filterMenu('desserts')">Desserts</button>
+                <button class="filter-btn" onclick="filterMenu('drinks')">Drinks</button>
+            </div>
+
+            <!-- Breakfast -->
+            <div id="breakfast" class="menu-category active">
+                <h2>Breakfast Selection</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Buttermilk Pancakes or Belgian Waffles</h3>
+                            <span class="price">₦12,000</span>
+                        </div>
+                        <p>Soft-scrambled farm eggs, golden fried chicken, finished with warm pure maple syrup. (Chef's Signature)</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Brioche French Toast</h3>
+                            <span class="price">₦15,000</span>
+                        </div>
+                        <p>Crowned with a sunny-side-up egg and a silky fish velouté.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>The Full American</h3>
+                            <span class="price">₦15,000</span>
+                        </div>
+                        <p>Brioche French toast, maple syrup, herb omelette, grilled artisan sausages, slow-baked beans.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Nigerian Morning Plate</h3>
+                            <span class="price">₦9,000</span>
+                        </div>
+                        <p>Velvety custard sweetened with honey or sugar, served with golden fried plantains and pillowy akara.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Hearty Oat Porridge</h3>
+                            <span class="price">₦9,000</span>
+                        </div>
+                        <p>Choice of fresh milk or creamy yoghurt, topped with grapes, strawberries, banana, and toasted nuts.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Crisp Vegetable Spring Rolls & Artisan Sausages</h3>
+                            <span class="price">₦9,000</span>
+                        </div>
+                        <p>Paired with a delicate spiced dipping sauce.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Chicken & Avocado Club</h3>
+                            <span class="price">₦10,000</span>
+                        </div>
+                        <p>Toasted bread sandwich, hand-cut chips and scrambled eggs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Starters -->
+            <div id="starters" class="menu-category">
+                <h2>Starters & Appetizers</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Mini Chicken Tacos with Fresh Salsa</h3>
+                            <span class="price">₦13,000</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Tempura Fish Fingers & Citrus Aioli</h3>
+                            <span class="price">₦9,000</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Honey-Glazed Sesame Chicken Bites</h3>
+                            <span class="price">₦7,000</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Seafood Spring Rolls, Chili-Lime Dip</h3>
+                            <span class="price">₦7,000</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Honey Tempura Chicken Strips</h3>
+                            <span class="price">₦7,000</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Suya-Spiced Chicken Skewers</h3>
+                            <span class="price">₦7,000</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Fiery Chili-Reduction Prawns</h3>
+                            <span class="price">₦9,000</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Pepper Sauce Chicken Wings</h3>
+                            <span class="price">₦7,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Course -->
+            <div id="main" class="menu-category">
+                <h2>Main Course</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>At The Ocean</h3>
+                            <span class="price">₦25,000</span>
+                        </div>
+                        <p>Seafood Fried Rice with prawns & calamari, Crispy Beer-Battered Fillet with tartare sauce, Chargrilled Tiger Prawns with garlic-herb butter</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Beach O'Clock</h3>
+                            <span class="price">₦23,000</span>
+                        </div>
+                        <p>Pan-Grilled Red Snapper, mashed potatoes or hand-cut chips, shrimp salad</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Asian Punch</h3>
+                            <span class="price">₦27,000</span>
+                        </div>
+                        <p>Chinese-Style Egg Fried Rice, Lemon & Honey-Glazed Chicken, Slow-Cooked Beef in Oyster Sauce, Sautéed Seasonal Vegetables</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Bangladesh Streets</h3>
+                            <span class="price">₦25,000</span>
+                        </div>
+                        <p>Fragrant Jasmine Rice with garden herbs, Aromatic Chicken Curry, Stir-Fried Vegetables with Greek yoghurt drizzle</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>The Ribeye Experience</h3>
+                            <span class="price">₦35,000</span>
+                        </div>
+                        <p>Pan-Seared Steak with Mashed butter Potatoes & Red Wine Shallot Jus</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Today's Catch</h3>
+                            <span class="price">₦20,000</span>
+                        </div>
+                        <p>Grilled whole market fish/Catfish, brushed with pepper sauce, choice of side and salad (Chef's Signature)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sides -->
+            <div id="sides" class="menu-category">
+                <h2>Sides</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Chicken and Chips and Salad</h3>
+                            <span class="price">₦13,000</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Pineapple Rice</h3>
+                            <span class="price">₦13,000</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Stir Fry Spaghetti</h3>
+                            <span class="price">₦18,000</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Grilled Sauce with Croaker Fish</h3>
+                            <span class="price">₦12,000</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Grilled Sauce with Catfish</h3>
+                            <span class="price">₦12,000</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Asun Rice</h3>
+                            <span class="price">₦10,000</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Jollof Rice</h3>
+                            <span class="price">₦8,000</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Fried Rice</h3>
+                            <span class="price">₦9,000</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Chips</h3>
+                            <span class="price">₦5,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soups -->
+            <div id="soups" class="menu-category">
+                <h2>Soups & Traditional Peppersoup</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Egusi Soup</h3>
+                            <span class="price">₦15,000</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Vegetable Soup</h3>
+                            <span class="price">₦15,000</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Okra Soup</h3>
+                            <span class="price">₦15,000</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Ogbono Soup</h3>
+                            <span class="price">₦15,000</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Banga Soup</h3>
+                            <span class="price">₦15,000</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Goat Meat Peppersoup</h3>
+                            <span class="price">₦8,000</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Assorted Peppersoup</h3>
+                            <span class="price">₦8,000</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Chicken Peppersoup</h3>
+                            <span class="price">₦8,000</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Catfish Peppersoup</h3>
+                            <span class="price">₦8,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Salads -->
+            <div id="salads" class="menu-category">
+                <h2>Salads</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Pasta Primavera Salad</h3>
+                            <span class="price">₦4,500</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Roast Chicken Salad</h3>
+                            <span class="price">₦5,000</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Creamy Coleslaw</h3>
+                            <span class="price">₦4,500</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Chef's Seasonal Signature Salad</h3>
+                            <span class="price">₦5,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pasta -->
+            <div id="pasta" class="menu-category">
+                <h2>Pasta & Noodles</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Creamy Alfredo Penne With Pan-Grilled Suya Chicken</h3>
+                            <span class="price">₦15,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div id="desserts" class="menu-category">
+                <h2>Desserts & Sweet Treats</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Classic Vanilla Ice Cream</h3>
+                            <span class="price">₦4,000 <span class="unit">(per scoop)</span></span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Fresh Fruit Salad</h3>
+                            <span class="price">₦4,500</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Red Velvet Cake with Cream Frosting</h3>
+                            <span class="price">₦5,000</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Whipped Cream Parfait with Strawberry Glaze</h3>
+                            <span class="price">₦5,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drinks -->
+            <div id="drinks" class="menu-category">
+                <h2>Beverages</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Premium Cocktails</h3>
+                        </div>
+                        <p>Our mixologist's signature creations</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Frozen Cocktails</h3>
+                        </div>
+                        <p>Refreshing blended drinks</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Milkshakes</h3>
+                        </div>
+                        <p>Creamy indulgence</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Red, Rosé & Cream Wines</h3>
+                        </div>
+                        <p>Curated selection</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Premium Spirits</h3>
+                        </div>
+                        <p>Whiskey, Tequila, Cognac</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h3>Soft Drinks & Juice</h3>
+                        </div>
+                        <p>Non-alcoholic options</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Dine?</h2>
+            <p>Reserve your table today for an unforgettable experience</p>
+            <a href="contact.html" class="cta-button">Make a Reservation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Secret Signature Restaurant & Lounge. All rights reserved.</p>
+            <p>109 Convent Street, Agbor, Delta State | +234 813 635 4459</p>
+        </div>
+    </footer>
+
+    <script>
+        function filterMenu(category) {
+            // Hide all categories
+            const categories = document.querySelectorAll('.menu-category');
+            categories.forEach(cat => cat.classList.remove('active'));
+            
+            // Remove active class from buttons
+            const buttons = document.querySelectorAll('.filter-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            // Show selected category
+            document.getElementById(category).classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
